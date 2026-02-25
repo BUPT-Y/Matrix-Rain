@@ -6,7 +6,7 @@
 #include "winapi.h"
 #include <Windows.h>
 
-int num_x, count_y = 0, current_width, current_heght;
+int num_x, count_y = 0, current_width, current_height;
 
 int main()
 {
@@ -19,9 +19,9 @@ int main()
     srand(time(NULL));
     while (true) 
     {
-        Sleep(40);
+        Sleep(33);
 		current_width = get_screen_width();
-        current_heght = get_screen_height();
+        current_height = get_screen_height();
         num_x = rand() % (current_width / 12);
 
         for (int i = 0; i < num_x; i++) //create new drops
@@ -40,7 +40,7 @@ int main()
         }
         
 
-        for (; list[bottom].get_y() - list[bottom].get_len() > current_heght+1; bottom = (bottom + 1) % MAX_DROPS);//delete drops that are out of screen
+        for (; list[bottom].get_y() - list[bottom].get_len() > current_height+1; bottom = (bottom + 1) % MAX_DROPS);//delete drops that are out of screen
 	}
 
 }

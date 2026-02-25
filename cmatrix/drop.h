@@ -1,4 +1,5 @@
 #pragma once
+#include "Config.h"
 #include <stdlib.h>
 
 class drop {
@@ -7,6 +8,7 @@ private:
     int x;
     int y;
     int current_len;
+    char str[MAX_LENGTH];
 public:
     drop();
     drop(int, int);
