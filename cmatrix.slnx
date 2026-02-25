@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="cmatrix/cmatrix.vcxproj" Id="2fa302f5-ff3f-43b6-bedb-6449bed0a7cc" />
+</Solution>
