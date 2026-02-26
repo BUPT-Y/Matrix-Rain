@@ -35,9 +35,8 @@ void drop::move()
 	{
 		if (y - i >= 0 && y - i < current_height)
 		{
-			if(str[i] == 0 || rand() % 3 == 1) str[i] = random_char();
 			gotoxy(x, y - i);
-			printf("%c", str[i]);
+			printf("%c", random_char());
 		}
 	}
 
